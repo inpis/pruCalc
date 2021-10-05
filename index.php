@@ -8,12 +8,20 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Prudential Calculator App</title>
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
+    />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:italic,300,400,600,700&amp;display=swap"
     />
     <link rel="stylesheet" href="/public/css/components.min.css" />
     <link
@@ -22,29 +30,412 @@
     />
     <link rel="stylesheet" href="/public/css/main.min.css" />
     <link rel="stylesheet" href="/public/css/media.min.css" />
+        <!-- Start: Favicon-->
+        <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/public/assets/resources/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/public/assets/resources/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/public/assets/resources/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/public/assets/resources/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/public/assets/resources/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#ffc40d" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- End: Favicon-->
   </head>
   <body class="shrinked">
     <!-- inject:header:html -->
     
     <!-- endinject -->
     <header class="main-header">
-      <div class="container">
-        <div class="main-header__content">
-          <div class="main-header__logo-wrap">
-            <a href="/">
-              <img src="/public/assets/logo.png" alt="logo" class="main-header__logo" />
-            </a>
+      <div class="main-header__top">
+        <div class="container">
+          <div class="main-header__content">
+            <div class="main-header__logo-wrap">
+              <a href="/">
+                <img
+                  src="/public/assets/logo.png"
+                  alt="logo"
+                  class="main-header__logo"
+                />
+              </a>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="main-header__content-right">
+                <div class="main-header__control-btn-wrap">
+                  <a
+                    class="main-header__control-btn main-header__search-btn"
+                    href="#"
+                    data-panel="search"
+                  >
+                    <i class="i-icon i-icon-search"></i>
+                  </a>
+                </div>
+                <div class="main-header__control-btn-wrap">
+                  <a
+                    class="main-header__control-btn main-header__languages-btn"
+                    href="#"
+                    data-panel="language"
+                  >
+                    <i class="i-icon i-icon-language"></i>
+                    <span>EN</span>
+                  </a>
+                </div>
+                <div class="main-header__control-btn-wrap">
+                  <a
+                    class="main-header__control-btn main-header__contact-btn"
+                    href="#"
+                  >
+                    <i class="i-icon i-icon-contact-chat"></i>
+                  </a>
+                </div>
+              </div>
+              <button class="main-header__mobile-burger">
+                <div class="i-icon i-icon-burger"></div>
+                <div class="i-icon i-icon-close"></div>
+              </button>
+            </div>
           </div>
-          <div class="main-header__language-wrap">
-            <ul class="main-header__language">
-              <li class="main-header__language-item active">
-                <a href="/">EN</a>
-              </li>
-              <li class="main-header__language-item">
-                <a href="/la/">LA</a>
-              </li>
-            </ul>
+        </div>
+      </div>
+      <div class="main-header__bottom">
+        <div class="container">
+          <div class="main-header__nav-wrap">
+            <nav class="main-header__nav">
+              <ul class="main-header__nav-menu">
+                <li class="main-header__nav-menu-item">
+                  <a
+                    href="#"
+                    class="main-header__nav-menu-link dropdown"
+                    data-panel="1"
+                  >
+                    We Do Dance
+                  </a>
+                </li>
+                <li class="main-header__nav-menu-item">
+                  <a
+                    href="#"
+                    class="main-header__nav-menu-link dropdown"
+                    data-panel="2"
+                  >
+                    We Do Pulse
+                  </a>
+                </li>
+                <li class="main-header__nav-menu-item">
+                  <a
+                    href="#"
+                    class="main-header__nav-menu-link dropdown"
+                    data-panel="3"
+                  >
+                    Products
+                  </a>
+                </li>
+                <li class="main-header__nav-menu-item">
+                  <a
+                    href="#"
+                    class="main-header__nav-menu-link dropdown"
+                    data-panel="4"
+                  >
+                    Claims & Services
+                  </a>
+                </li>
+                <li class="main-header__nav-menu-item">
+                  <a
+                    href="#"
+                    class="main-header__nav-menu-link dropdown"
+                    data-panel="5"
+                  >
+                    Work with Us
+                  </a>
+                </li>
+                <li class="main-header__nav-menu-item">
+                  <a
+                    href="#"
+                    class="main-header__nav-menu-link dropdown"
+                    data-panel="6"
+                  >
+                    About Us
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
+          <div class="main-header__overlay-panel">
+            <div class="main-header__overlay-panel-content">
+              <div class="main-header__overlay-panel-inner">
+                <div class="panel-content d-none" data-panel="1">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/en/dance-for-wellness/" class="main-header__overlay-panel-link">
+                          <span>Dance for Wellness</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/en/prudential-x-superm/" class="main-header__overlay-panel-link">
+                          <span>Prudential x SuperM</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/en/join-the-virtual-concert/" class="main-header__overlay-panel-link">
+                          <span>Join the virtual concert</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/en/join-the-dance-challenge/superm-dance-tutorials/" class="main-header__overlay-panel-link">
+                          <span>Videos</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-content d-none" data-panel="2">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/en/we-do-pulse/" class="main-header__overlay-panel-link">
+                          <span>Explore Pulse</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/en/we-do-pulse/health-and-wellness/" class="main-header__overlay-panel-link">
+                          <span>Health and wellness articles</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-content d-none" data-panel="3">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/en/life-insurance/" class="main-header__overlay-panel-link">
+                          <span>Life insurance</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                      <div>
+                        <ul class="main-header__overlay-panel-menu">
+                          <li>
+                            <a href="https://www.prudential.la/corp/prudential-la/en/life-insurance/prulife-saver/">PRULife Saver</a>
+                          </li>
+                          <li>
+                            <a href="https://www.prudential.la/corp/prudential-la/en/life-insurance/prubright-family/">PRUBright Family</a>
+                          </li>
+                          <li>
+                            <a href="https://www.prudential.la/corp/prudential-la/en/life-insurance/prudream-protector/">PRUDream Protector</a>
+                          </li>
+                          <li>
+                            <a href="https://www.prudential.la/corp/prudential-la/en/life-insurance/prudengue/">PRUDengue</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/en/guide-to-insurance/" class="main-header__overlay-panel-link">
+                          <span>Guide to insurance</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-content d-none" data-panel="4">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/en/claims/" class="main-header__overlay-panel-link">
+                          <span>Claims</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/en/policy-payment/" class="main-header__overlay-panel-link">
+                          <span>Policy and payment</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/en/support/" class="main-header__overlay-panel-link">
+                          <span>Support</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-content d-none" data-panel="5">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/en/why-work-with-prudential/" class="main-header__overlay-panel-link">
+                          <span>Why work with us</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/en/why-work-with-prudential/our-team/" class="main-header__overlay-panel-link">
+                          <span>Our team</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/en/why-work-with-prudential/graduates-and-students/" class="main-header__overlay-panel-link">
+                          <span>Graduates and students</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/en/why-work-with-prudential/career-help/" class="main-header__overlay-panel-link">
+                          <span>Career help</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-content d-none" data-panel="6">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/en/about-prudential-laos/" class="main-header__overlay-panel-link">
+                          <span>Prudential Laos</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/en/newsroom/" class="main-header__overlay-panel-link">
+                          <span>Newsroom</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/en/corporate-social-responsibility/" class="main-header__overlay-panel-link">
+                          <span>Corporate social responsibility</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="panel-content panel-content--search d-none"
+                  data-panel="search"
+                >
+                  <div class="panel-content__flex">
+                    <div class="panel-content__title">
+                      What can we help you find?
+                    </div>
+                    <div class="panel-content__content">
+                      <form
+                        id="searchForm"
+                        class="panel-search-form"
+                        action="/"
+                      >
+                        <div class="panel-search-form__content">
+                          <button
+                            id="searchFormSubmit"
+                            class="panel-search-form__submit-btn"
+                            type="submit"
+                          >
+                            <i class="i-icon i-icon-search"></i>
+                          </button>
+                          <button
+                            id="searchFormClear"
+                            class="panel-search-form__clear-btn"
+                            type="button"
+                          >
+                            <i class="i-icon i-icon-close"></i>
+                          </button>
+                          <input
+                            id="searchFormInput"
+                            class="panel-search-form__input"
+                            type="text"
+                            name="keyword"
+                            placeholder="Search by product, service and more"
+                            title="Search by product, service and more"
+                            autocomplete="off"
+                          />
+                        </div>
+                      </form>
+                    </div>
+                    <a class="panel-content__btn-close" href="#" title="close">
+                      <i class="i-icon i-icon-close"></i>
+                      <span class="btn-text">Cancel</span>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="panel-content panel-content--language d-none"
+                  data-panel="language"
+                >
+                  <div class="panel-content__flex">
+                    <div class="panel-content__title">Select your language</div>
+                    <div class="panel-content__content">
+                      <a
+                        class="language__item-btn active"
+                        href="/"
+                        title="English"
+                      >
+                        English
+                      </a>
+                      <a class="language__item-btn" href="/la/" title="ລາວ">
+                        ລາວ
+                      </a>
+                    </div>
+                    <a class="panel-content__btn-close" href="#" title="close">
+                      <i class="i-icon i-icon-close"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-header__overlay-backdrop"></div>
         </div>
       </div>
     </header>
@@ -94,11 +485,7 @@
                         I agree to the provision and use of my personal data by
                         Prudential Life Assurance (Lao) Company Limited
                         ("Prudential") for direct marketing purposes in
-                        accordance with
-<!--                         <a href="https://www.prudential.la/corp/prudential-la/en/privacy-notice/" target="_blank">
-                          Section C of Prudential's "Privacy Notice" *
-                        </a> -->
-                          Section C of Prudential's "Privacy Notice" *
+                        accordance with Section C of Prudential's "Privacy Notice" *
                       </span>
                       <input
                         id="form_personal_agreed"
@@ -1388,6 +1775,282 @@
         </div>
       </div>
     </div>
+
+    <div id="mobileMenu" class="mobile-menu-overlay">
+      <ul class="mobile-menu-overlay__menu">
+        <li>
+          <a href="#" title="We Do Dance"> We Do Dance<span class="i-icon i-icon-arrow-down-thin"></span>
+          </a>
+          <div class="mobile-menu-overlay__menu-panel">
+            <ul>
+              <li>
+                <a href="https://www.prudential.la/corp/prudential-la/en/dance-for-wellness/"
+                  title="Dance for Wellness">
+                  Dance for Wellness
+                </a>
+              </li>
+              <li>
+                <a href="https://www.prudential.la/corp/prudential-la/en/prudential-x-superm/"
+                  title="Prudential x SuperM">
+                  Prudential x SuperM
+                </a>
+              </li>
+              <li>
+                <a href="https://www.prudential.la/corp/prudential-la/en/join-the-virtual-concert/"
+                  title="Join the virtual concert">
+                  Join the virtual concert
+                </a>
+              </li>
+              <li>
+                <a href="https://www.prudential.la/corp/prudential-la/en/join-the-dance-challenge/superm-dance-tutorials/"
+                  title="Videos">
+                  Videos
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#" title="We Do Pulse">
+            We Do Pulse<span class="i-icon i-icon-arrow-down-thin"></span>
+          </a>
+          <div class="mobile-menu-overlay__menu-panel">
+            <ul>
+              <li>
+                <a href="https://www.prudential.la/corp/prudential-la/en/we-do-pulse/"
+                  title="Explore Pulse">
+                  Explore Pulse
+                </a>
+              </li>
+              <li>
+                <a href="https://www.prudential.la/corp/prudential-la/en/we-do-pulse/health-and-wellness/"
+                  title="Health and wellness articles">
+                  Health and wellness articles
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#" title="Products">
+            Products<span class="i-icon i-icon-arrow-down-thin"></span>
+          </a>
+          <div class="mobile-menu-overlay__menu-panel">
+            <ul>
+            <li class="mobile-menu-overlay__inner-menu-wrap">
+                <div class="mobile-menu-overlay__inner-menu-btn-wrap">
+                  <a
+                    title="Life insurance "
+                    href="javascript:;"
+                    class="mobile-menu-overlay__inner-menu-btn"
+                  >
+                    Life insurance
+                  </a>
+                  <div class="right-icon">
+                    <i class="i-icon i-icon-arrow-right" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="mobile-menu-overlay__inner-menu">
+                  <div class="mobile-menu-overlay__inner-menu-content">
+                    <div class="back-icon">
+                      <a class="parent-link" title="Life insurance ">
+                        <i
+                          class="i-icon i-icon-arrow-left"
+                          aria-hidden="true"
+                        ></i>
+                        <span>Life insurance </span>
+                      </a>
+                    </div>
+                    <ul class="mobile-menu-overlay__inner-menu-list">
+                      <li>
+                        <a
+                          class="child-link"
+                          data-title=""
+                          href="https://www.prudential.la/corp/prudential-la/en/life-insurance/"
+                          title="Life insurance "
+                        >
+                          Life insurance
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="child-link"
+                          data-title="PRULife Saver"
+                          href="https://www.prudential.la/corp/prudential-la/en/life-insurance/prulife-saver/"
+                          title="PRULife Saver"
+                        >
+                          PRULife Saver
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="child-link"
+                          data-title="PRUBright Family"
+                          href="https://www.prudential.la/corp/prudential-la/en/life-insurance/prubright-family/"
+                          title="PRUBright Family"
+                        >
+                          PRUBright Family
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="child-link"
+                          data-title="PRUDream Protector"
+                          href="https://www.prudential.la/corp/prudential-la/en/life-insurance/prudream-protector/"
+                          title="PRUDream Protector"
+                        >
+                          PRUDream Protector
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="child-link"
+                          data-title="PRUDengue"
+                          href="https://www.prudential.la/corp/prudential-la/en/life-insurance/prudengue/"
+                          title="PRUDengue"
+                        >
+                          PRUDengue
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a
+                  href="https://www.prudential.la/corp/prudential-la/en/guide-to-insurance/"
+                  title="Guide to insurance"
+                >
+                  Guide to insurance
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#" title="Claims &amp; Services">
+            Claims &amp; Services<span
+              class="i-icon i-icon-arrow-down-thin"
+            ></span>
+          </a>
+          <div class="mobile-menu-overlay__menu-panel">
+            <ul>
+              <li>
+                <a href="https://www.prudential.la/corp/prudential-la/en/claims/" title="Claims">
+                  Claims
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.prudential.la/corp/prudential-la/en/policy-payment/"
+                  title="Policy and payment"
+                >
+                  Policy and payment
+                </a>
+              </li>
+              <li>
+                <a href="https://www.prudential.la/corp/prudential-la/en/support/" title="Support">
+                  Support
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#" title="Work with Us">
+            Work with Us<span class="i-icon i-icon-arrow-down-thin"></span>
+          </a>
+          <div class="mobile-menu-overlay__menu-panel">
+            <ul>
+              <li>
+                <a
+                  href="https://www.prudential.la/corp/prudential-la/en/why-work-with-prudential/"
+                  title="Why work with us"
+                >
+                  Why work with us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.prudential.la/corp/prudential-la/en/why-work-with-prudential/our-team/"
+                  title="Our team"
+                >
+                  Our team
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.prudential.la/corp/prudential-la/en/why-work-with-prudential/graduates-and-students/"
+                  title="Graduates and students"
+                >
+                  Graduates and students
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.prudential.la/corp/prudential-la/en/why-work-with-prudential/career-help/"
+                  title="Career help"
+                >
+                  Career help
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#" title="About Us">
+            About Us<span class="i-icon i-icon-arrow-down-thin"></span>
+          </a>
+          <div class="mobile-menu-overlay__menu-panel">
+            <ul>
+              <li>
+                <a
+                  href="https://www.prudential.la/corp/prudential-la/en/about-prudential-laos/"
+                  title="Prudential Laos"
+                >
+                  Prudential Laos
+                </a>
+              </li>
+              <li>
+                <a href="https://www.prudential.la/corp/prudential-la/en/newsroom/" title="Newsroom">
+                  Newsroom
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.prudential.la/corp/prudential-la/en/corporate-social-responsibility/"
+                  title="Corporate social responsibility"
+                >
+                  Corporate social responsibility
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div class="mobile-menu-overlay__language">
+        <div class="mobile-menu-overlay__language-select-wrap">
+          <a
+            class="mobile-menu-overlay__language-select-btn"
+            href="#"
+            title="English"
+          >
+            <i class="i-icon i-icon-language"></i>
+            <span>English</span>
+          </a>
+          <select
+            class="mobile-menu-overlay__language-select"
+            title="English"
+            tabindex="-1"
+            id="mobileLanguageSelect"
+          >
+            <option value="/" selected="">English</option>
+            <option value="/la/">ລາວ</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-menu-overlay-backdrop"></div>
 
     <!-- inject:footer:html -->
     

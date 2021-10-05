@@ -1,0 +1,22 @@
+
+<!-- saved from url=(0093)https://www.prudential.la/corp/system/modules/com.prudential.v2.la/resources/site.webmanifest -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>{
+    "name": "",
+    "short_name": "",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}
+</body></html>

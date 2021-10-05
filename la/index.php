@@ -8,7 +8,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>ເຄື່ອງ​ຄິດ​ໄລ່​ການ​ຄຸ້ມ​ຄອງທາງການເງິນຈາກພຣູເດັນໂຊລ໌</title>
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /> -->
     <link rel="stylesheet" href="/public/css/components.min.css" />
     <link
       rel="stylesheet"
@@ -16,29 +16,412 @@
     />
     <link rel="stylesheet" href="/public/css/main.min.css" />
     <link rel="stylesheet" href="/public/css/media.min.css" />
+    <!-- Start: Favicon-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/public/assets/resources/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/public/assets/resources/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/public/assets/resources/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/public/assets/resources/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/public/assets/resources/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#ffc40d" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- End: Favicon-->
   </head>
   <body class="shrinked lang-la">
     <!-- inject:header:html -->
     
     <!-- endinject -->
     <header class="main-header">
-      <div class="container">
-        <div class="main-header__content">
-          <div class="main-header__logo-wrap">
-            <a href="/">
-              <img src="/public/assets/logo.png" alt="logo" class="main-header__logo" />
-            </a>
+      <div class="main-header__top">
+        <div class="container">
+          <div class="main-header__content">
+            <div class="main-header__logo-wrap">
+              <a href="/la/">
+                <img
+                  src="/public/assets/logo.png"
+                  alt="logo"
+                  class="main-header__logo"
+                />
+              </a>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="main-header__content-right">
+                <div class="main-header__control-btn-wrap">
+                  <a
+                    class="main-header__control-btn main-header__search-btn"
+                    href="#"
+                    data-panel="search"
+                  >
+                    <i class="i-icon i-icon-search"></i>
+                  </a>
+                </div>
+                <div class="main-header__control-btn-wrap">
+                  <a
+                    class="main-header__control-btn main-header__languages-btn"
+                    href="#"
+                    data-panel="language"
+                  >
+                    <i class="i-icon i-icon-language"></i>
+                    <span>ລາວ</span>
+                  </a>
+                </div>
+                <div class="main-header__control-btn-wrap">
+                  <a
+                    class="main-header__control-btn main-header__contact-btn"
+                    href="#"
+                  >
+                    <i class="i-icon i-icon-contact-chat"></i>
+                  </a>
+                </div>
+              </div>
+              <button class="main-header__mobile-burger">
+                <div class="i-icon i-icon-burger"></div>
+                <div class="i-icon i-icon-close"></div>
+              </button>
+            </div>
           </div>
-          <div class="main-header__language-wrap">
-            <ul class="main-header__language">
-              <li class="main-header__language-item active">
-                <a href="/">EN</a>
-              </li>
-              <li class="main-header__language-item">
-                <a href="/la/">LA</a>
-              </li>
-            </ul>
+        </div>
+      </div>
+      <div class="main-header__bottom">
+        <div class="container">
+          <div class="main-header__nav-wrap">
+            <nav class="main-header__nav">
+              <ul class="main-header__nav-menu">
+                <li class="main-header__nav-menu-item">
+                  <a
+                    href="#"
+                    class="main-header__nav-menu-link dropdown"
+                    data-panel="1"
+                  >
+                    We Do Dance
+                  </a>
+                </li>
+                <li class="main-header__nav-menu-item">
+                  <a
+                    href="#"
+                    class="main-header__nav-menu-link dropdown"
+                    data-panel="2"
+                  >
+                    We Do Pulse
+                  </a>
+                </li>
+                <li class="main-header__nav-menu-item">
+                  <a
+                    href="#"
+                    class="main-header__nav-menu-link dropdown"
+                    data-panel="3"
+                  >
+                  ຜະລິດຕະພັນ
+                  </a>
+                </li>
+                <li class="main-header__nav-menu-item">
+                  <a
+                    href="#"
+                    class="main-header__nav-menu-link dropdown"
+                    data-panel="4"
+                  >
+                  ການທົດແທນປະກັນໄພ ແລະ ການບໍລິການ
+                  </a>
+                </li>
+                <li class="main-header__nav-menu-item">
+                  <a
+                    href="#"
+                    class="main-header__nav-menu-link dropdown"
+                    data-panel="5"
+                  >
+                  ຮ່ວມວຽກກັບພວກເຮົາ
+                  </a>
+                </li>
+                <li class="main-header__nav-menu-item">
+                  <a
+                    href="#"
+                    class="main-header__nav-menu-link dropdown"
+                    data-panel="6"
+                  >
+                  ກ່ຽວກັບພວກເຮົາ
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
+          <div class="main-header__overlay-panel">
+            <div class="main-header__overlay-panel-content">
+              <div class="main-header__overlay-panel-inner">
+                <div class="panel-content d-none" data-panel="1">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/lo/dance-for-wellness/" class="main-header__overlay-panel-link">
+                          <span>ເຕັ້ນເພື່ອສຸຂະພາບ</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/lo/prudential-x-superm/" class="main-header__overlay-panel-link">
+                          <span>ພຣູເດັນໂຊລ໌ X ຊຸບເປີ້ເອັມ</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/lo/join-the-virtual-concert/" class="main-header__overlay-panel-link">
+                          <span>ຮ່ວມງານ virtual ຄອນເສີດ</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/lo/join-the-dance-challenge/superm-dance-tutorials/" class="main-header__overlay-panel-link">
+                          <span>Dance Tutorials</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-content d-none" data-panel="2">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/lo/we-do-pulse/" class="main-header__overlay-panel-link">
+                          <span>ເບິ່ງກ່ຽວກັບ ເພົ້າສ໌</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/lo/we-do-pulse/health-and-wellness/" class="main-header__overlay-panel-link">
+                          <span>ບົດຄວາມກ່ຽວກັບ ສຸຂະພາບ</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-content d-none" data-panel="3">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/lo/life-insurance/" class="main-header__overlay-panel-link">
+                          <span>ປະກັນໄພຊີວິດ</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                      <div>
+                        <ul class="main-header__overlay-panel-menu">
+                          <li>
+                            <a href="https://www.prudential.la/corp/prudential-la/lo/life-insurance/prulife-saver/">ພຣູໄລ້ ເຊັບເວີ້</a>
+                          </li>
+                          <li>
+                            <a href="https://www.prudential.la/corp/prudential-la/lo/life-insurance/prubright-family/">ພຣູໄບຣ້ ເເຟມມີລີ</a>
+                          </li>
+                          <li>
+                            <a href="https://www.prudential.la/corp/prudential-la/lo/life-insurance/prudream-protector/">ພຣູດຣີມ ໂພຣເທັກເຕີ້</a>
+                          </li>
+                          <li>
+                            <a href="https://www.prudential.la/corp/prudential-la/lo/life-insurance/prudengue/">ພຣູເດັງກີ້</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/en/guide-to-insurance/" class="main-header__overlay-panel-link">
+                          <span>ຄູ່ມືສຳລັບການປະກັນໄພ</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-content d-none" data-panel="4">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/lo/claims/" class="main-header__overlay-panel-link">
+                          <span>ຄູ່ມືສຳລັບການປະກັນໄພ</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/lo/policy-payment/" class="main-header__overlay-panel-link">
+                          <span>ສັນຍາການປະກັນໄພ ແລະ ການຊຳລະຄ່າທຳນຽມ</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/lo/support/" class="main-header__overlay-panel-link">
+                          <span>ການໃຫ້ການຊ່ວຍເຫຼືອ</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-content d-none" data-panel="5">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/lo/why-work-with-prudential/" class="main-header__overlay-panel-link">
+                          <span>ເປັນຫຍັງເຮັດວຽກກັບພວກເຮົາ</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/lo/why-work-with-prudential/our-team/" class="main-header__overlay-panel-link">
+                          <span>ພົບກັບທີມງານຂອງພວກເຮົາ</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/lo/why-work-with-prudential/graduates-and-students/" class="main-header__overlay-panel-link">
+                          <span>ໂອກາດສຳລັບນັກສຶກສາຜູ້ຈົບໃໝ່ ເເລະ ນັກສຶກສາ</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/lo/why-work-with-prudential/career-help/" class="main-header__overlay-panel-link">
+                          <span>ຄຳເເນະນຳດ້ານອາຊີບ</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-content d-none" data-panel="6">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/lo/about-prudential-laos/" class="main-header__overlay-panel-link">
+                          <span>ພຣູເດັນໂຊລ໌ ລາວ</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/lo/newsroom/" class="main-header__overlay-panel-link">
+                          <span>ຂ່າວສານ</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div>
+                        <a href="https://www.prudential.la/corp/prudential-la/lo/corporate-social-responsibility/" class="main-header__overlay-panel-link">
+                          <span>ຄວາມຮັບຜິດຊອບຕໍ່ສັງຄົມ ແລະ ສິ່ງເເວດລ້ອມ</span>
+                          <span class="i-icon i-icon-arrow-right"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="panel-content panel-content--search d-none"
+                  data-panel="search"
+                >
+                  <div class="panel-content__flex">
+                    <div class="panel-content__title">
+                    ພວກເຮົາຊ່ວຍທ່ານຄົ້ນຫາຫຍັງໄດ້ເເດ່?
+                    </div>
+                    <div class="panel-content__content">
+                      <form
+                        id="searchForm"
+                        class="panel-search-form"
+                        action="/"
+                      >
+                        <div class="panel-search-form__content">
+                          <button
+                            id="searchFormSubmit"
+                            class="panel-search-form__submit-btn"
+                            type="submit"
+                          >
+                            <i class="i-icon i-icon-search"></i>
+                          </button>
+                          <button
+                            id="searchFormClear"
+                            class="panel-search-form__clear-btn"
+                            type="button"
+                          >
+                            <i class="i-icon i-icon-close"></i>
+                          </button>
+                          <input
+                            id="searchFormInput"
+                            class="panel-search-form__input"
+                            type="text"
+                            name="keyword"
+                            placeholder="ຄົ້ນຫາ ຜະລິດຕະພັນ, ບໍລິການ, ແລະ ອື່ນໆ"
+                            title="Search by product, service and more"
+                            autocomplete="off"
+                          />
+                        </div>
+                      </form>
+                    </div>
+                    <a class="panel-content__btn-close" href="#" title="close">
+                      <i class="i-icon i-icon-close"></i>
+                      <span class="btn-text">ຍົກເລີກ</span>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="panel-content panel-content--language d-none"
+                  data-panel="language"
+                >
+                  <div class="panel-content__flex">
+                    <div class="panel-content__title">ເລືອກພາສາ</div>
+                    <div class="panel-content__content">
+                      <a
+                        class="language__item-btn"
+                        href="/"
+                        title="English"
+                      >
+                        English
+                      </a>
+                      <a class="language__item-btn active" href="/la/" title="ລາວ">
+                        ລາວ
+                      </a>
+                    </div>
+                    <a class="panel-content__btn-close" href="#" title="close">
+                      <i class="i-icon i-icon-close"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-header__overlay-backdrop"></div>
         </div>
       </div>
     </header>
@@ -82,8 +465,7 @@
                   <div>
                     <label class="custom-checkbox-container">
                       <span class="custom-checkbox__text">
-                        ຂ້າພະເຈົ້າຕົກລົງເຫັນດີໃຫ້ ບໍລິສັດ ພຣູເດັນໂຊລ໌ ປະກັນໄພຊີວິດ (ລາວ) ຈຳກັດ. (“ພຣູເດັນໂຊລ໌”) ນຳໃຊ້ຂໍ້ມູນສ່ວນຕົວຂອງຂ້າພະເຈົ້າເພື່ອຈຸດປະສົງທາງການຕະຫຼາດໂດຍກົງຕາມພາກ 
-                          C ຂອງການແຈ້ງຄວາມເປັນສ່ວນຕົວ.*
+                        ຂ້າພະເຈົ້າຕົກລົງເຫັນດີໃຫ້ ບໍລິສັດ ພຣູເດັນໂຊລ໌ ປະກັນໄພຊີວິດ (ລາວ) ຈຳກັດ. (“ພຣູເດັນໂຊລ໌”) ນຳໃຊ້ຂໍ້ມູນສ່ວນຕົວຂອງຂ້າພະເຈົ້າເພື່ອຈຸດປະສົງທາງການຕະຫຼາດໂດຍກົງຕາມພາກ C ຂອງການແຈ້ງຄວາມເປັນສ່ວນຕົວ.*
                       </span>
                       <input
                         id="form_personal_agreed"
@@ -1361,6 +1743,295 @@
         </div>
       </div>
     </div>
+
+    <div id="mobileMenu" class="mobile-menu-overlay">
+      <ul class="mobile-menu-overlay__menu">
+        <li>
+          <a href="#" title="We Do Dance">
+            We Do Dance<span class="i-icon i-icon-arrow-down-thin"></span>
+          </a>
+          <div class="mobile-menu-overlay__menu-panel">
+            <ul>
+              <li>
+                <a
+                  href="https://www.prudential.la/corp/prudential-la/lo/dance-for-wellness/"
+                  title="Dance for Wellness"
+                >
+                  ເຕັ້ນເພື່ອສຸຂະພາບ
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.prudential.la/corp/prudential-la/lo/prudential-x-superm/"
+                  title="Prudential x SuperM"
+                >
+                  ພຣູເດັນໂຊລ໌ X ຊຸບເປີ້ເອັມ
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.prudential.la/corp/prudential-la/lo/join-the-virtual-concert/"
+                  title="Join the virtual concert"
+                >
+                  ຮ່ວມງານ virtual ຄອນເສີດ
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.prudential.la/corp/prudential-la/lo/join-the-dance-challenge/superm-dance-tutorials/"
+                  title="Videos"
+                >
+                  Dance Tutorials
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#" title="We Do Pulse">
+            We Do Pulse<span class="i-icon i-icon-arrow-down-thin"></span>
+          </a>
+          <div class="mobile-menu-overlay__menu-panel">
+            <ul>
+              <li>
+                <a
+                  href="https://www.prudential.la/corp/prudential-la/lo/we-do-pulse/"
+                  title="Explore Pulse"
+                >
+                  ເບິ່ງກ່ຽວກັບ ເພົ້າສ໌
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.prudential.la/corp/prudential-la/lo/we-do-pulse/health-and-wellness/"
+                  title="Health and wellness articles"
+                >
+                  ບົດຄວາມກ່ຽວກັບ ສຸຂະພາບ
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#" title="Products">
+            ຜະລິດຕະພັນ<span class="i-icon i-icon-arrow-down-thin"></span>
+          </a>
+          <div class="mobile-menu-overlay__menu-panel">
+            <ul>
+              <li class="mobile-menu-overlay__inner-menu-wrap">
+                <div class="mobile-menu-overlay__inner-menu-btn-wrap">
+                  <a
+                    title="Life insurance "
+                    href="javascript:;"
+                    class="mobile-menu-overlay__inner-menu-btn"
+                  >
+                    ປະກັນໄພຊີວິດ
+                  </a>
+                  <div class="right-icon">
+                    <i class="i-icon i-icon-arrow-right" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="mobile-menu-overlay__inner-menu">
+                  <div class="mobile-menu-overlay__inner-menu-content">
+                    <div class="back-icon">
+                      <a class="parent-link" title="Life insurance ">
+                        <i
+                          class="i-icon i-icon-arrow-left"
+                          aria-hidden="true"
+                        ></i>
+                        <span>ປະກັນໄພຊີວິດ </span>
+                      </a>
+                    </div>
+                    <ul class="mobile-menu-overlay__inner-menu-list">
+                      <li>
+                        <a
+                          class="child-link"
+                          data-title=""
+                          href="https://www.prudential.la/corp/prudential-la/lo/life-insurance/"
+                          title="Life insurance "
+                        >
+                          ປະກັນໄພຊີວິດ
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="child-link"
+                          data-title="PRULife Saver"
+                          href="https://www.prudential.la/corp/prudential-la/lo/life-insurance/prulife-saver/"
+                          title="PRULife Saver"
+                        >
+                          ພຣູໄລ້ ເຊັບເວີ້
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="child-link"
+                          data-title="PRUBright Family"
+                          href="https://www.prudential.la/corp/prudential-la/lo/life-insurance/prubright-family/"
+                          title="PRUBright Family"
+                        >
+                          ພຣູໄບຣ້ ເເຟມມີລີ
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="child-link"
+                          data-title="PRUDream Protector"
+                          href="https://www.prudential.la/corp/prudential-la/lo/life-insurance/prudream-protector/"
+                          title="PRUDream Protector"
+                        >
+                          ພຣູດຣີມ ໂພຣເທັກເຕີ້
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="child-link"
+                          data-title="PRUDengue"
+                          href="https://www.prudential.la/corp/prudential-la/lo/life-insurance/prudengue/"
+                          title="PRUDengue"
+                        >
+                          ພຣູເດັງກີ້
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a
+                  href="https://www.prudential.la/corp/prudential-la/en/guide-to-insurance/"
+                  title="Guide to insurance"
+                >
+                  ຄູ່ມືສຳລັບການປະກັນໄພ
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#" title="Claims &amp; Services">
+            ການທົດແທນປະກັນໄພ &amp; ການບໍລິການ<span
+              class="i-icon i-icon-arrow-down-thin"
+            ></span>
+          </a>
+          <div class="mobile-menu-overlay__menu-panel">
+            <ul>
+              <li>
+                <a href="https://www.prudential.la/corp/prudential-la/lo/claims/" title="Claims">
+                  ການທົດແທນປະກັນໄພ
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.prudential.la/corp/prudential-la/lo/policy-payment/"
+                  title="Policy and payment"
+                >
+                  ສັນຍາການປະກັນໄພ ແລະ ການຊຳລະຄ່າທຳນຽມ
+                </a>
+              </li>
+              <li>
+                <a href="https://www.prudential.la/corp/prudential-la/lo/support/" title="Support">
+                  ການໃຫ້ການຊ່ວຍເຫຼືອ
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#" title="Work with Us">
+            ຮ່ວມວຽກກັບພວກເຮົາ<span class="i-icon i-icon-arrow-down-thin"></span>
+          </a>
+          <div class="mobile-menu-overlay__menu-panel">
+            <ul>
+              <li>
+                <a
+                  href="https://www.prudential.la/corp/prudential-la/lo/why-work-with-prudential/"
+                  title="Why work with us"
+                >
+                  ເປັນຫຍັງເຮັດວຽກກັບພວກເຮົາ
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.prudential.la/corp/prudential-la/lo/why-work-with-prudential/our-team/"
+                  title="Our team"
+                >
+                  ພົບກັບທີມງານຂອງພວກເຮົາ
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.prudential.la/corp/prudential-la/lo/why-work-with-prudential/graduates-and-students/"
+                  title="Graduates and students"
+                >
+                  ໂອກາດສຳລັບນັກສຶກສາຜູ້ຈົບໃໝ່ ເເລະ ນັກສຶກສາ
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.prudential.la/corp/prudential-la/lo/why-work-with-prudential/career-help/"
+                  title="Career help"
+                >
+                  ຄຳເເນະນຳດ້ານອາຊີບ
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#" title="About Us">
+            ກ່ຽວກັບພວກເຮົາ<span class="i-icon i-icon-arrow-down-thin"></span>
+          </a>
+          <div class="mobile-menu-overlay__menu-panel">
+            <ul>
+              <li>
+                <a
+                  href="https://www.prudential.la/corp/prudential-la/lo/about-prudential-laos/"
+                  title="Prudential Laos"
+                >
+                  ພຣູເດັນໂຊລ໌ ລາວ
+                </a>
+              </li>
+              <li>
+                <a href="https://www.prudential.la/corp/prudential-la/lo/newsroom/" title="Newsroom">
+                  ຂ່າວສານ
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.prudential.la/corp/prudential-la/lo/corporate-social-responsibility/"
+                  title="Corporate social responsibility"
+                >
+                  ຄວາມຮັບຜິດຊອບຕໍ່ສັງຄົມ ແລະ ສິ່ງເເວດລ້ອມ
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div class="mobile-menu-overlay__language">
+        <div class="mobile-menu-overlay__language-select-wrap">
+          <a
+            class="mobile-menu-overlay__language-select-btn"
+            href="#"
+            title="ລາວ"
+          >
+            <i class="i-icon i-icon-language"></i>
+            <span>ລາວ</span>
+          </a>
+          <select
+            class="mobile-menu-overlay__language-select"
+            title="ລາວ"
+            tabindex="-1"
+            id="mobileLanguageSelect"
+          >
+            <option value="/">English</option>
+            <option value="/la/" selected="">ລາວ</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-menu-overlay-backdrop"></div>
 
     <!-- inject:footer:html -->
     
